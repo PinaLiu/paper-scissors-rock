@@ -20,6 +20,7 @@ export const computerVsComputer = () => {
     resultEl.textContent = result;
 
     updateScore(result, score);
+    console.log("Score after update:", score);
 
     scoreComputer1El.textContent = `Computer 1: ${score.player1}`;
     scoreComputer2El.textContent = `Computer 2: ${score.player2}`;
