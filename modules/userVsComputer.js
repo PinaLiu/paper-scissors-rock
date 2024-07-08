@@ -19,10 +19,11 @@ export const userVsComputer = () => {
       userEl.textContent = `Hai scelto: ${userChoice}`;
       computerEl.textContent = `Il computer ha scelto: ${computerChoiceResult}`;
       resultEl.textContent = result;
-      scoreUserEl.textContent = `Utente: ${score.player1}`;
-      scoreComputerEl.textContent = `Computer: ${score.player2}`;
 
       updateScore(result, score);
+
+      scoreUserEl.textContent = `Utente: ${score.player1}`;
+      scoreComputerEl.textContent = `Computer: ${score.player2}`;
     });
   });
 

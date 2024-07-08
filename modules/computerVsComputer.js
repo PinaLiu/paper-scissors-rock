@@ -18,10 +18,11 @@ export const computerVsComputer = () => {
     computer1El.textContent = `Computer 1 ha scelto: ${computer1Choice}`;
     computer2El.textContent = `Computer 2 ha scelto: ${computer2Choice}`;
     resultEl.textContent = result;
-    scoreComputer1El.textContent = `Computer 1: ${score.player1}`;
-    scoreComputer2El.textContent = `Computer 2: ${score.player2}`;
 
     updateScore(result, score);
+
+    scoreComputer1El.textContent = `Computer 1: ${score.player1}`;
+    scoreComputer2El.textContent = `Computer 2: ${score.player2}`;
   });
 
   restart("restart", ["computer1", "computer2", "result-computer"], score);
