@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* Colore senape */
+:root {
+  --senape: #f3c025;
+  --senape-scuro: #d4a002;
+  --bianco: #ffffff;
+}
+
+body {
+  background-color: var(--senape);
+  font-family: "Indie Flower", cursive;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+.container-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container-card {
+  background-color: var(--bianco);
+
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  flex: 1 1 30%;
+
+  text-align: center;
+}
+
+.results p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+#result,
+#result-computer {
+  color: brown;
+}
+
+.button {
+  background-color: var(--senape);
+  color: var(--bianco);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--senape-scuro);
+}
+
+.restart {
+  clear: both;
+  margin-top: 20px;
+}
+
+#restart {
+  background-color: var(--bianco);
+  color: var(--senape);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#restart:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .results p {
+    font-size: 1em;
+  }
+
+  .button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+  }
+
+  #restart {
+    padding: 10px;
+    font-size: 1em;
+  }
+}

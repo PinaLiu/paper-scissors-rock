@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta Sasso Forbici</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-main">
+      <h1>Carta Sasso Forbici</h1>
+      <div class="container-game">
+        <!-- user vs Computer -->
+        <div class="container-card" id="user-vs-computer">
+          <h2>Utente vs Computer</h2>
+          <button class="button" id="carta">Carta</button>
+          <button class="button" id="forbici">Forbici</button>
+          <button class="button" id="sasso">Sasso</button>
+          <div class="results">
+            <p id="user"></p>
+            <p id="computer"></p>
+            <p id="result"></p>
+            <p id="score-user"></p>
+            <p id="score-computer"></p>
+          </div>
+        </div>
+
+        <!-- Computer vs Computer -->
+        <div class="container-card" id="computer-vs-computer">
+          <h2>Computer vs Computer</h2>
+          <button class="button" id="start-computer-vs-computer">Inizia</button>
+          <div class="results">
+            <p id="computer1"></p>
+            <p id="computer2"></p>
+            <p id="result-computer"></p>
+            <p id="score-computer1"></p>
+            <p id="score-computer2"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- restart -->
+      <div class="restart">
+        <button id="restart">Gioca ancora</button>
+      </div>
+    </div>
+  </body>
+</html>
